@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+    <!-- Replace the content tag with appropriate information -->
+    <meta name="description" content="DESCRIPTION META TAG">
+    <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+    <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+    <meta property="og:url" content="URL OF THE WEBSITE"/>
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+    <meta property="og:image" content="static/image/your_banner_image.png"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+    <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+    <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+    <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Keywords for your paper to be indexed by-->
+    <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <title>Joint Vehicle Pose and Extent Estimation in the Context of Multi-Camera Traffic Surveillance</title>
+    <!-- <link rel="icon" type="image/x-icon" href="static/images/favicon.ico"> -->
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                    <h1 class="title is-3 publication-title">Joint Vehicle Pose and Extent Estimation in the Context of Multi-Camera Traffic Surveillance</h1>
+                    <div class="is-size-5 publication-authors">
+                        <span class="author-block">Leah Strand<sup>1</sup>,</span>
+                        <span class="author-block">Jens Honer<sup>2</sup>,</span>
+                        <span class="author-block">Alois C. Knoll<sup>1</sup></span>
+                    </div>
+                    <div class="is-size-5 publication-authors">
+                        <!-- <span class="author-block">Technical University of Munich</span> -->
+                        <span class="eql-cntrb"><small><sup>1</sup>Technical University of Munich</small></span>
+
+                        <span class="eql-cntrb"><small><sup>2</sup>Software Products and Services Product Line (DSW),
+                            Valeo Schalter und Sensoren GmbH</small></span>
+                    </div>
+                    <br>
+                    <div class=is-size-4> 
+                        <a href="https://fusion2024.org/ is-medium">IEEE 27th International Conference on Information Fusion in Venice, Italy</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container" style="text-align: center">
+            <h2 class="title is-3">Motivation </h2>
+
+            <div class="item item-img2">
+                    &nbsp;
+                    <img src="static/visuals/01-motivation.png" style="width: 90%;" alt=""/>
+                    <h2 class="subtitle has-text-centered">
+                        The objective of our work is to fuse the data from a multi-camera traffic surveillance system with the task of localizing passing cars.
+                    </h2>
+                </div>
+                <br><br>
+            <div class="item item-img1">
+                &nbsp;
+                <img src="static/visuals/02-problem.png" style="width: 70%;" alt=""/>
+                <h2 class="subtitle has-text-centered">
+                    The inherent difficulty in accurately estimating the real-world object state from a two-dimensional 
+                    representation of the scene poses a significant challenge. We present a novel measurement model that 
+                    <!-- defines the relationship between the object state and the measurement through the occupied area in the image space -->
+                    compares the measured and the expected spatial expansion of the object within the image frame to estimate its pose and extents. 
+                </h2>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        In this paper, we introduce a novel method for the estimation of vehicle pose and extent in traffic surveillance scenarios based on camera data. The state estimation is performed in a common world frame, enabling the seamless integration of the image data from different viewpoints. Our approach incorporates the non-linear transformation between the measurements and the states directly into the framework of an Unscented Kalman filter. Two measurement models are proposed: one designed for bounding boxes and another for discretized object contours extracted from segmentation masks. The method is evaluated using data from a real-world traffic surveillance system, demonstrating the high effectiveness and good feasibility of our approach for localizing passing cars.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Overview  -->
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container" style="text-align: center">
+            <!--            <h2 class="title is-3">Dataset Visualization</h2>-->
+            <h2 class="title is-3">Overview </h2>
+
+            <div class="item item-img2">
+                    &nbsp;
+                    <img src="static/visuals/03_overview.png" style="width: 80%;" alt="" />
+                    <h2 class="subtitle has-text-justify">
+                        Illustration of the proposed method which combines deep-learning for extracting the observation with filtering of the object state 
+                        in the world frame. Two measurement models are presented: one tailored to bounding boxes (a) and one to discretized contours (b).  
+                    </h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End overview -->
+
+
+
+<!-- Sensor setup  -->
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <div class="columns">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Evaluation</h2>
+                
+                <div class="item item-img2">
+                    &nbsp;
+                    <img src="static/visuals/04_dataset.png" alt=""/>
+                    <h2 class="subtitle has-text-centered">
+                         For the evaluation, we recorded five datasets by equipping different vehicles with a high-precision RTK-GPS 
+                         device and recording in total 39 trajectories at the intersection.
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container" style="text-align: center">
+            <!--            <h2 class="title is-3">Dataset Visualization</h2>-->
+            <h2 class="title is-3">Exemplary Visualized Results </h2>
+
+
+
+            <div class="item video1">
+                &nbsp;
+                <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos_results/south-left2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="item video1">
+                &nbsp;
+                <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos_results/west-left.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item video1">
+                &nbsp;
+                <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos_results/south-straight2.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item video1">
+                &nbsp;
+                <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos_results/east-left.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="item video1">
+                &nbsp;
+                <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos_results/north-left2.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="item video1">
+                &nbsp;
+                <video poster="" autoplay controls muted loop height="100%">
+                    <source src="static/videos_results/north-straight.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<section class="hero">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+                <h2 class="subtitle has-text-centered is-size-6">
+                    Funded by 
+                </h2>
+                <img src="static/visuals/funding.png" style="width: 30%;" is-centered alt=""/>
+                <h2 class="subtitle has-text-centered is-size-6">
+                    as part of the research project VIDETEC-2
+                </h2>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+
+</html>
